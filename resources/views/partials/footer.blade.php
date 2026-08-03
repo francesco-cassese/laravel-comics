@@ -12,7 +12,7 @@
                 <ul class="footer-links list-unstyled">
                     <li><a href="{{ route('home') }}">Home</a></li>
                     <li><a href="{{ route('fumetti') }}">Fumetti</a></li>
-                    <li><a href="{{ route('chi-siamo') }}">Chi siamo</a></li>
+                    <li><a href="{{ route('il-progetto') }}">Il Progetto</a></li>
                     <li><a href="{{ route('contatti') }}">Contatti</a></li>
                 </ul>
             </div>
