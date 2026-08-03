@@ -28,16 +28,50 @@ body {
    ========================================================================== */
 .custom-navbar {
     background-color: var(--color-navy);
+    padding-top: 0.85rem;
+    padding-bottom: 0.85rem;
 }
 
-.custom-navbar .navbar-brand,
+.custom-navbar .navbar-brand {
+    color: var(--color-bg);
+    font-weight: 700;
+    font-size: 1.35rem;
+    letter-spacing: 0.02em;
+}
+
+.custom-navbar .navbar-brand-accent {
+    color: var(--color-gold);
+}
+
 .custom-navbar .nav-link {
     color: var(--color-bg);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    position: relative;
+    transition: color 0.2s ease;
+}
+
+.custom-navbar .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    bottom: 0.25rem;
+    height: 2px;
+    background-color: var(--color-gold);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.2s ease;
 }
 
 .custom-navbar .nav-link:hover,
 .custom-navbar .nav-link.active {
     color: var(--color-gold);
+}
+
+.custom-navbar .nav-link:hover::after,
+.custom-navbar .nav-link.active::after {
+    transform: scaleX(1);
 }
 
 .custom-navbar .navbar-toggler {

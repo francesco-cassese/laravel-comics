@@ -1,7 +1,9 @@
 <header>
-    <nav class="navbar navbar-expand-lg custom-navbar">
+    <nav class="navbar navbar-expand-lg custom-navbar sticky-top shadow-sm">
         <div class="container">
-            <a class="navbar-brand" href="{{ route('home') }}">Comics Shop</a>
+            <a class="navbar-brand" href="{{ route('home') }}">
+                <span class="navbar-brand-accent">Comics</span> Shop
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
