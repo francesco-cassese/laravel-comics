@@ -291,12 +291,49 @@ body {
 
 .comic-thumb-wrapper {
     position: relative;
+    overflow: hidden;
 }
 
 .comic-thumb {
     aspect-ratio: 2 / 3;
     object-fit: cover;
     width: 100%;
+    transition: transform 0.4s ease;
+}
+
+.comic-card:hover .comic-thumb,
+.comic-card:focus-within .comic-thumb {
+    transform: scale(1.08);
+}
+
+.comic-card-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-end;
+    padding: 0.85rem;
+    background: linear-gradient(to top, rgba(var(--color-navy-rgb), 0.95) 15%, rgba(var(--color-navy-rgb), 0) 65%);
+    opacity: 0;
+    transform: translateY(12%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.comic-card:hover .comic-card-overlay,
+.comic-card:focus-within .comic-card-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.comic-card-synopsis {
+    color: var(--color-bg);
+    font-size: 0.8rem;
+    line-height: 1.4;
+    margin-bottom: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .comic-series-badge {
