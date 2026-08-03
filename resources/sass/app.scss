@@ -1,22 +1,27 @@
 /* ==========================================================================
-   Imports
+   Variabili (proprie + override delle variabili di Bootstrap)
    ========================================================================== */
-@import "bootstrap/dist/css/bootstrap.min.css";
+@import "variables";
 
 /* ==========================================================================
-   Variabili colore
+   Bootstrap (sorgente Sass, non CSS precompilato)
+   ========================================================================== */
+@import "bootstrap/scss/bootstrap";
+
+/* ==========================================================================
+   Variabili colore (custom properties, usate anche negli inline style delle view)
    ========================================================================== */
 :root {
-    --color-navy: #14213d;
+    --color-navy: #{$color-navy};
     --color-navy-rgb: 20, 33, 61;
-    --color-navy-light: #1f2f57;
-    --color-red: #d62828;
+    --color-navy-light: #{$color-navy-light};
+    --color-red: #{$color-red};
     --color-red-rgb: 214, 40, 40;
-    --color-gold: #fcbf49;
+    --color-gold: #{$color-gold};
     --color-gold-rgb: 252, 191, 73;
-    --color-bg: #f8f7f4;
+    --color-bg: #{$color-bg};
     --color-bg-rgb: 248, 247, 244;
-    --color-text: #1c1c1e;
+    --color-text: #{$color-text};
     --color-text-rgb: 28, 28, 30;
     --color-shadow-rgb: 0, 0, 0;
 }

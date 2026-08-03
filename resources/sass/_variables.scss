@@ -1,0 +1,14 @@
+// Palette del progetto
+$color-navy: #14213d;
+$color-navy-light: #1f2f57;
+$color-red: #d62828;
+$color-gold: #fcbf49;
+$color-bg: #f8f7f4;
+$color-text: #1c1c1e;
+
+// Override delle variabili di Bootstrap prima di importarlo
+$primary: $color-navy;
+$secondary: $color-gold;
+$danger: $color-red;
+$body-bg: $color-bg;
+$body-color: $color-text;
