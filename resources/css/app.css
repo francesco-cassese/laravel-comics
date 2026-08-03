@@ -1,13 +1,56 @@
-@import 'tailwindcss';
+/* ==========================================================================
+   Imports
+   ========================================================================== */
 @import "bootstrap/dist/css/bootstrap.min.css";
 
+/* ==========================================================================
+   Variabili colore
+   ========================================================================== */
+:root {
+    --color-navy: #14213d;
+    --color-navy-light: #1f2f57;
+    --color-red: #d62828;
+    --color-gold: #fcbf49;
+    --color-bg: #f8f7f4;
+    --color-text: #1c1c1e;
+}
 
-@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
-@source '../**/*.blade.php';
-@source '../**/*.js';
+/* ==========================================================================
+   Base
+   ========================================================================== */
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
 
-@theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+/* ==========================================================================
+   Navbar
+   ========================================================================== */
+.custom-navbar {
+    background-color: var(--color-navy);
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+    color: var(--color-bg);
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
+    color: var(--color-gold);
+}
+
+.custom-navbar .navbar-toggler {
+    border-color: var(--color-gold);
+}
+
+.custom-navbar .navbar-toggler-icon {
+    filter: invert(75%) sepia(50%) saturate(500%) hue-rotate(360deg);
+}
+
+/* ==========================================================================
+   Fumetti
+   ========================================================================== */
+.comic-price {
+    color: var(--color-red);
 }
