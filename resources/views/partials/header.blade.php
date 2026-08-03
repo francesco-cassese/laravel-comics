@@ -17,7 +17,7 @@
                         <a class="nav-link {{ request()->routeIs('fumetti') ? 'active' : '' }}" href="{{ route('fumetti') }}">Fumetti</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ request()->routeIs('chi-siamo') ? 'active' : '' }}" href="{{ route('chi-siamo') }}">Chi siamo</a>
+                        <a class="nav-link {{ request()->routeIs('il-progetto') ? 'active' : '' }}" href="{{ route('il-progetto') }}">Il Progetto</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{ request()->routeIs('contatti') ? 'active' : '' }}" href="{{ route('contatti') }}">Contatti</a>

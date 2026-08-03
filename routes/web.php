@@ -10,9 +10,9 @@ Route::get('/fumetti', function () {
     return view('fumetti.index');
 })->name('fumetti');
 
-Route::get('/chi-siamo', function () {
+Route::get('/il-progetto', function () {
     return view('about');
-})->name('chi-siamo');
+})->name('il-progetto');
 
 Route::get('/contatti', function () {
     return view('contact');
