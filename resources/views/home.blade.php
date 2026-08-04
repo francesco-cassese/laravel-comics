@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @php
+    // Prendo i fumetti dal file di configurazione e tengo solo i primi 6
     $featuredComics = array_slice(config('comics'), 0, 6);
 @endphp
 
@@ -55,6 +56,7 @@
             <a href="{{ route('fumetti') }}" class="section-link">Vedi tutto il catalogo &rarr;</a>
         </div>
         <div class="row g-4">
+            {{-- Scorro i fumetti in evidenza e li mostro con il componente comic-card --}}
             @foreach ($featuredComics as $comic)
                 <div class="col-6 col-md-4 col-lg-2">
                     <x-comic-card :comic="$comic" />

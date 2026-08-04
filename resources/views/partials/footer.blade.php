@@ -26,6 +26,7 @@
     </div>
     <div class="footer-bottom">
         <div class="container py-3">
+            {{-- Mostro sempre l'anno corrente nel copyright --}}
             <p class="mb-0">&copy; {{ date('Y') }} Comics Shop. Tutti i diritti riservati.</p>
         </div>
     </div>

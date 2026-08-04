@@ -9,12 +9,15 @@
 </head>
 
 <body>
+    {{-- Intestazione, uguale per tutte le pagine --}}
     @include('partials.header')
 
     <main>
+        {{-- Contenuto che cambia in base alla pagina --}}
         @yield('contenuto')
     </main>
 
+    {{-- Footer, uguale per tutte le pagine --}}
     @include('partials.footer')
 </body>
 
